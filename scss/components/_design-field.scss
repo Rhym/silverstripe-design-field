@@ -1,0 +1,108 @@
+/** =========================================
+ * Sizing
+ ===========================================*/
+
+$left-margin: 184px;
+
+$block-width: 200px;
+$block-height: 130px;
+$block-left: $block-width + $left-margin;
+
+$input-width: 50px;
+$input-height: 30px;
+
+$block-two-left: $block-width + $input-width;
+
+.design.has-sizing {
+    position: relative;
+    padding-top: $block-height + $input-height;
+    &::before,
+    &::after {
+        content: 'Padding';
+        text-align: center;
+        position: absolute;
+        line-height: $block-height - $input-height;
+        top: $input-height / 2;
+        border-radius: $input-height / 2;
+        left: $left-margin + $input-width / 2;
+        width: $block-width - $input-width;
+        height: $block-height - $input-height;
+        border: 1px solid rgba(0,0,0,0.12);
+    }
+    &::after {
+        content: 'Margin';
+        left: $left-margin + $block-two-left + $input-width / 2;
+        visibility: visible;
+    }
+    > label.left {
+        position: absolute;
+        top: 0;
+    }
+    .field {
+        &.padding-top,
+        &.padding-right,
+        &.padding-bottom,
+        &.padding-left,
+        &.margin-top,
+        &.margin-right,
+        &.margin-bottom,
+        &.margin-left {
+            z-index: 1;
+            border-width: 0;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 0;
+            label {
+                display: none;
+            }
+            .middleColumn {
+                margin: 0;
+                .text {
+                    border-radius: 2px;
+                    height: $input-height;
+                    width: $input-width;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+        /**
+         * Padding
+         */
+        &.padding-top {
+            left: floor(($left-margin + ($block-width / 2)) - ($input-width / 2));
+        }
+        &.padding-right {
+            left: floor($block-left - $input-width);
+            top: floor($block-height / 2 - $input-height / 2);
+        }
+        &.padding-bottom {
+            left: floor(($left-margin + $block-width / 2) - $input-width / 2);
+            top: floor($block-height - $input-height);
+        }
+        &.padding-left {
+            left: floor($left-margin);
+            top: floor($block-height / 2 - $input-height / 2);
+        }
+        /**
+         * Margin
+         */
+        &.margin-top {
+            left: floor(($left-margin + $block-two-left + ($block-width / 2)) - ($input-width / 2));
+        }
+        &.margin-right {
+            left: floor($block-left + $block-two-left - $input-width);
+            top: floor($block-height / 2 - $input-height / 2);
+        }
+        &.margin-bottom {
+            left: floor(($left-margin + $block-two-left + $block-width / 2) - $input-width / 2);
+            top: floor($block-height - $input-height);
+        }
+        &.margin-left {
+            left: floor($left-margin + $block-two-left);
+            top: floor($block-height / 2 - $input-height / 2);
+        }
+    }
+}

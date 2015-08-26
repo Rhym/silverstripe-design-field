@@ -93,6 +93,8 @@ class DesignField extends FormField
         }
 
         parent::__construct($name, $title, $value);
+
+        Requirements::css(SILVERSTRIPE_DESIGN_FIELD . '/css/main.css');
     }
 
     /**

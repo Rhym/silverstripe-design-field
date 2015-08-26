@@ -1,0 +1,151 @@
+/** =========================================
+ * Main
+ ===========================================*/
+
+/** =========================================
+ * Variables
+ ===========================================*/
+
+/** =========================================
+ * Design Field
+ ===========================================*/
+
+/** =========================================
+ * Components
+ ===========================================*/
+
+/** =========================================
+ * Sizing
+ ===========================================*/
+
+.design.has-sizing {
+	position: relative;
+	padding-top: 160px;
+}
+
+.design.has-sizing::before,
+.design.has-sizing::after {
+	content: 'Padding';
+	text-align: center;
+	position: absolute;
+	line-height: 100px;
+	top: 15px;
+	border-radius: 15px;
+	left: 209px;
+	width: 150px;
+	height: 100px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.design.has-sizing::after {
+	content: 'Margin';
+	left: 459px;
+	visibility: visible;
+}
+
+.design.has-sizing > label.left {
+	position: absolute;
+	top: 0;
+}
+
+.design.has-sizing .field { /**
+     * Padding
+     */ /**
+     * Margin
+     */
+}
+
+.design.has-sizing .field.padding-top,
+.design.has-sizing .field.padding-right,
+.design.has-sizing .field.padding-bottom,
+.design.has-sizing .field.padding-left,
+.design.has-sizing .field.margin-top,
+.design.has-sizing .field.margin-right,
+.design.has-sizing .field.margin-bottom,
+.design.has-sizing .field.margin-left {
+	z-index: 1;
+	border-width: 0;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	top: 0;
+}
+
+.design.has-sizing .field.padding-top label,
+.design.has-sizing .field.padding-right label,
+.design.has-sizing .field.padding-bottom label,
+.design.has-sizing .field.padding-left label,
+.design.has-sizing .field.margin-top label,
+.design.has-sizing .field.margin-right label,
+.design.has-sizing .field.margin-bottom label,
+.design.has-sizing .field.margin-left label {
+	display: none;
+}
+
+.design.has-sizing .field.padding-top .middleColumn,
+.design.has-sizing .field.padding-right .middleColumn,
+.design.has-sizing .field.padding-bottom .middleColumn,
+.design.has-sizing .field.padding-left .middleColumn,
+.design.has-sizing .field.margin-top .middleColumn,
+.design.has-sizing .field.margin-right .middleColumn,
+.design.has-sizing .field.margin-bottom .middleColumn,
+.design.has-sizing .field.margin-left .middleColumn {
+	margin: 0;
+}
+
+.design.has-sizing .field.padding-top .middleColumn .text,
+.design.has-sizing .field.padding-right .middleColumn .text,
+.design.has-sizing .field.padding-bottom .middleColumn .text,
+.design.has-sizing .field.padding-left .middleColumn .text,
+.design.has-sizing .field.margin-top .middleColumn .text,
+.design.has-sizing .field.margin-right .middleColumn .text,
+.design.has-sizing .field.margin-bottom .middleColumn .text,
+.design.has-sizing .field.margin-left .middleColumn .text {
+	border-radius: 2px;
+	height: 30px;
+	width: 50px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.design.has-sizing .field.padding-top {
+	left: 259px;
+}
+
+.design.has-sizing .field.padding-right {
+	left: 334px;
+	top: 50px;
+}
+
+.design.has-sizing .field.padding-bottom {
+	left: 259px;
+	top: 100px;
+}
+
+.design.has-sizing .field.padding-left {
+	left: 184px;
+	top: 50px;
+}
+
+.design.has-sizing .field.margin-top {
+	left: 509px;
+}
+
+.design.has-sizing .field.margin-right {
+	left: 584px;
+	top: 50px;
+}
+
+.design.has-sizing .field.margin-bottom {
+	left: 509px;
+	top: 100px;
+}
+
+.design.has-sizing .field.margin-left {
+	left: 434px;
+	top: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
+
