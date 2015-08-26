@@ -11,11 +11,11 @@ The field is saved into the database as a JSON string. Here's an example of the 
    "background":"#ffffff"
 }
 ```
-The *$fields* parameter supports pretty much all silverstripe fields, bar UploadFields and FileFields.
 ###Methods Summary
 - | -
 ---- | ----
 public | __construct($name, $title = null, $selector = null, $fields = null, $value = null)
+The *$fields* parameter supports pretty much all silverstripe fields, bar UploadFields and FileFields.
 ###Screenshot
 ![Design Field](https://cloud.githubusercontent.com/assets/1136811/9507672/e9ae41f4-4ca3-11e5-8ef4-3d5ecf36afc9.png)
 ###Example Usage
